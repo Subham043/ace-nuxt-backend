@@ -63,7 +63,7 @@ router.post('/create',
                     let msg = await userMail(sendData.data)
                     syncMail(sendData.data.email,"ACE GIFTING - Catalogue Request #"+sendData.data.id,msg)
                     let msgAdmin = await adminMail(sendData.data)
-                    syncMail('subham.5ine@gmail.com',"ACE GIFTING - Catalogue Request #"+sendData.data.id,msgAdmin)
+                    syncMail('info@acegiftingsolutions.com',"ACE GIFTING - Catalogue Request #"+sendData.data.id,msgAdmin)
                 }
 
                 return res.status(updateData.status).json({
